@@ -4,8 +4,6 @@ const dbConecction = async () => {
   try {
     await mongoose.connect(process.env.DB_CNN, {
       useNewUrlParser: true,
-      //useInifiedTopology: true,
-      //useCreateIndex: true,
     });
     console.log("Db OnLine");
   } catch (error) {
